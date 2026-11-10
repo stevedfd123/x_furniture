@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f1efe8" />
+  <meta name="description" content="X — contemporary furniture, made for modern Sri Lankan living. Shop and customise furniture in Anuradhapura." />
+  <title>X — Furniture, shaped around you</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" data-route="home" aria-label="X furniture home">X<span class="brand-dot">.</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#shop" data-route="shop" data-i18n="navShop">Collection</a>
+      <a href="#gallery" data-route="gallery" data-i18n="navGallery">Gallery</a>
+      <a href="#custom" data-route="custom" data-i18n="navCustom">Custom studio</a>
+      <a href="#about" data-route="about" data-i18n="navAbout">Our story</a>
+      <a href="#contact" data-route="contact" data-i18n="navContact">Visit us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang" id="langBtn" type="button" aria-label="Change language to Sinhala">සිං / EN</button>
+      <button class="cart-btn" id="cartBtn" type="button" aria-label="Open cart">Bag <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#shop" data-route="shop" data-i18n="navShop">Collection</a>
+      <a href="#gallery" data-route="gallery" data-i18n="navGallery">Gallery</a>
+      <a href="#custom" data-route="custom" data-i18n="navCustom">Custom studio</a>
+      <a href="#about" data-route="about" data-i18n="navAbout">Our story</a>
+      <a href="#contact" data-route="contact" data-i18n="navContact">Visit us</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page active" id="home" data-page="home">
+      <div class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span><span data-i18n="heroEyebrow">Designed in Anuradhapura</span></p>
+          <h1><span data-i18n="heroOne">Furniture,</span><br><em data-i18n="heroTwo">shaped around you.</em></h1>
+          <p class="hero-desc" data-i18n="heroDesc">Contemporary pieces with quiet character — made for the way you live, gather and pause.</p>
+          <div class="hero-ctas">
+            <a class="btn primary magnetic" href="#shop" data-route="shop"><span data-i18n="explore">Explore collection</span><b>↗</b></a>
+            <a class="text-link" href="#custom" data-route="custom"><span data-i18n="create">Create your own</span><i>→</i></a>
+          </div>
+        </div>
+        <div class="hero-art reveal" aria-label="Sculptural lounge chair in a warm modern interior" role="img">
+          <img class="hero-photo" src="assets/hero.jpg" alt="A contemporary living room with warm wood furniture and a comfortable sofa">
+          <div class="art-label"><small data-i18n="featured">A space to live in</small><strong>THE X EDIT / 01</strong></div>
+          <div class="scroll-cue"><span></span><small data-i18n="scroll">SCROLL TO DISCOVER</small></div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true"><div>FORM FOLLOWS FEELING ✦ BUILT TO LAST ✦ MADE IN SRI LANKA ✦ FORM FOLLOWS FEELING ✦ BUILT TO LAST ✦ MADE IN SRI LANKA ✦</div></div>
+
+      <section class="featured section-pad">
+        <div class="section-head reveal"><div><p class="kicker">01 / <span data-i18n="collection">THE COLLECTION</span></p><h2 data-i18n="objects">Objects for<br>everyday rituals.</h2></div><a href="#shop" data-route="shop" class="circle-link" aria-label="View all products">VIEW<br>ALL ↗</a></div>
+        <div class="product-grid" id="homeProducts"></div>
+      </section>
+
+      <section class="manifesto section-pad reveal">
+        <div class="manifesto-number">X — 24</div>
+        <div><p class="kicker" data-i18n="philosophy">OUR PHILOSOPHY</p><h2 data-i18n="manifesto">Less noise.<br>More <em>meaning.</em></h2><p data-i18n="manifestoDesc">We believe a home should feel collected, not decorated. Every X piece balances honest materials, purposeful comfort and a little unexpected joy.</p><a href="#about" data-route="about" class="text-link"><span data-i18n="story">Read our story</span><i>→</i></a></div>
+      </section>
+
+      <section class="custom-banner section-pad reveal">
+        <div class="custom-visual"><img src="assets/sofa.jpg" alt="Contemporary wooden sofa in a bright living room" loading="lazy"><span class="photo-tag">MADE FOR YOUR SPACE ↗</span></div>
+        <div class="custom-copy"><p class="kicker">02 / <span data-i18n="madeYours">MADE YOURS</span></p><h2 data-i18n="fitLife">Designed to fit<br>your life.</h2><p data-i18n="fitDesc">Choose your dimensions, finish and fabric. Our makers will build a piece that is distinctly yours.</p><a class="btn dark magnetic" href="#custom" data-route="custom"><span data-i18n="startCustom">Start customising</span><b>↗</b></a></div>
+      </section>
+    </section>
+
+    <section class="page inner-page" id="shop" data-page="shop">
+      <div class="page-hero"><p class="kicker">01 / COLLECTION</p><h1 data-i18n="shopTitle">Live with<br><em>better things.</em></h1><p data-i18n="shopDesc">Original forms, local craft and materials chosen to age beautifully.</p></div>
+      <div class="shop-tools"><div class="filters" role="group" aria-label="Product filters"><button class="active" data-filter="all">All</button><button data-filter="seating">Seating</button><button data-filter="tables">Tables</button><button data-filter="storage">Storage</button></div><label class="search-label"><span class="sr-only">Search products</span><input id="searchInput" type="search" placeholder="Search pieces…"><span>⌕</span></label></div>
+      <p class="reference-note" data-i18n="referenceNote">Inspiration photography shown as placeholders, not actual X products.</p><div class="product-grid shop-grid" id="shopProducts"></div>
+    </section>
+
+    <section class="page inner-page gallery-page" id="gallery" data-page="gallery">
+      <div class="page-hero gallery-heading"><p class="kicker">02 / THE GALLERY</p><h1 data-i18n="galleryTitle">Spaces worth<br><em>staying in.</em></h1><p data-i18n="galleryDesc">A closer look at beautiful furniture and the spaces that bring it to life.</p><p class="reference-note" data-i18n="referenceNote">Inspiration photography shown as placeholders, not actual X products.</p></div>
+      <div class="gallery-grid" id="galleryGrid">
+        <button class="gallery-tile tall" data-photo="assets/hero.jpg" data-caption="The living room"><img src="assets/hero.jpg" alt="Contemporary living room with sofa and wooden furniture" loading="lazy"><span>01 / THE LIVING ROOM <b>↗</b></span></button>
+        <button class="gallery-tile" data-photo="assets/living.jpg" data-caption="Natural textures"><img src="assets/living.jpg" alt="Oak furniture in a neutral living space" loading="lazy"><span>02 / NATURAL TEXTURES <b>↗</b></span></button>
+        <button class="gallery-tile" data-photo="assets/sofa.jpg" data-caption="Made for lounging"><img src="assets/sofa.jpg" alt="Wooden sofa with neutral cushions" loading="lazy"><span>03 / MADE FOR LOUNGING <b>↗</b></span></button>
+        <button class="gallery-tile" data-photo="assets/chair.jpg" data-caption="A moment of quiet"><img src="assets/chair.jpg" alt="Contemporary upholstered wood lounge chair" loading="lazy"><span>04 / A MOMENT OF QUIET <b>↗</b></span></button>
+        <button class="gallery-tile tall" data-photo="assets/room.jpg" data-caption="A room to unwind"><img src="assets/room.jpg" alt="Modern living room interior" loading="lazy"><span>05 / ROOM TO UNWIND <b>↗</b></span></button>
+        <button class="gallery-tile" data-photo="assets/dining.jpg" data-caption="Gather together"><img src="assets/dining.jpg" alt="Wood furniture in a contemporary dining room" loading="lazy"><span>06 / GATHER TOGETHER <b>↗</b></span></button>
+      </div>
+      <div class="gallery-bottom"><p>DESIGNED FOR LIVING / X FURNITURE</p><a href="#shop" data-route="shop" class="btn dark"><span data-i18n="explore">Explore collection</span><b>↗</b></a></div>
+    </section>
+
+    <section class="page inner-page" id="custom" data-page="custom">
+      <div class="custom-hero">
+        <div class="page-hero"><p class="kicker">02 / CUSTOM STUDIO</p><h1 data-i18n="customTitle">Your idea.<br><em>Our hands.</em></h1><p data-i18n="customDesc">Configure your SERA sofa and send us your design. We’ll confirm every detail before crafting begins.</p></div>
+        <div class="config-wrap">
+          <div class="config-preview" id="configPreview"><img src="assets/sofa.jpg" alt="Example of a contemporary wooden sofa" loading="lazy"><div class="config-sofa" aria-hidden="true"><i></i><i></i><b></b><b></b></div><span id="configLabel">SERA — Sand / Teak / 210cm</span><small class="preview-disclaimer">Reference image only; selections do not change the photo.</small></div>
+          <form class="config-panel" id="configForm">
+            <div class="step-label"><span>01</span><label data-i18n="fabric">FABRIC</label></div>
+            <div class="swatches" role="group" aria-label="Fabric colour"><button type="button" class="active" data-color="#c9ad88" data-name="Sand" aria-label="Sand"></button><button type="button" data-color="#6e7767" data-name="Sage" aria-label="Sage"></button><button type="button" data-color="#8f5145" data-name="Clay" aria-label="Clay"></button><button type="button" data-color="#383b3b" data-name="Charcoal" aria-label="Charcoal"></button></div>
+            <div class="step-label"><span>02</span><label for="wood" data-i18n="finish">WOOD FINISH</label></div>
+            <select id="wood"><option>Natural teak</option><option>Smoked teak</option><option>Black ash</option></select>
+            <div class="step-label"><span>03</span><label for="width" data-i18n="width">WIDTH — <output id="widthOut">210</output> CM</label></div>
+            <input type="range" id="width" min="160" max="280" value="210" step="10">
+            <div class="config-total"><span data-i18n="estimate">ESTIMATED FROM</span><strong id="configPrice">LKR 245,000</strong></div>
+            <button class="btn dark full" type="submit"><span data-i18n="requestQuote">Request this design</span><b>↗</b></button>
+          </form>
+        </div>
+      </div>
+      <div class="process"><p class="kicker">HOW IT WORKS</p><div class="process-grid"><article><span>01</span><h3>Configure</h3><p>Choose your form, scale and material palette.</p></article><article><span>02</span><h3>Refine</h3><p>Meet our designer and perfect every detail.</p></article><article><span>03</span><h3>Craft</h3><p>Made locally by specialists in 6–8 weeks.</p></article><article><span>04</span><h3>Deliver</h3><p>Carefully brought home and installed.</p></article></div></div>
+    </section>
+
+    <section class="page inner-page" id="about" data-page="about">
+      <div class="about-hero"><div class="page-hero"><p class="kicker">03 / OUR STORY</p><h1 data-i18n="aboutTitle">Rooted here.<br><em>Looking forward.</em></h1></div><div class="about-art"><img src="assets/living.jpg" alt="A warm interior with wooden furniture" loading="lazy"><span>Anuradhapura, 08°20'N</span></div></div>
+      <div class="story-block"><p class="lead" data-i18n="aboutLead">X began with a simple question: what if the furniture around us felt as thoughtful as the lives lived upon it?</p><div><p data-i18n="aboutBody">From our studio in Anuradhapura, we work with independent craftspeople and responsible suppliers to make contemporary furniture with a Sri Lankan point of view. Not trend-driven. Not disposable. Just considered objects that become part of your story.</p><div class="stats"><div><strong>2021</strong><span>Founded</span></div><div><strong>28</strong><span>Local makers</span></div><div><strong>82%</strong><span>Local material</span></div></div></div></div>
+      <div class="values"><article><span>01</span><h3>Honest materials</h3><p>We let timber, fibre and metal speak in their natural voices.</p></article><article><span>02</span><h3>Human made</h3><p>Every piece carries the touch and knowledge of a real person.</p></article><article><span>03</span><h3>Long life</h3><p>Designed to be repaired, refreshed and kept for generations.</p></article></div>
+    </section>
+
+    <section class="page inner-page" id="contact" data-page="contact">
+      <div class="contact-layout">
+        <div class="page-hero"><p class="kicker">04 / VISIT US</p><h1 data-i18n="contactTitle">Come in.<br><em>Stay awhile.</em></h1><p data-i18n="contactDesc">See the collection, feel the materials and talk through your space with us.</p><div class="contact-details"><div><small>SHOWROOM</small><p>18 Maithripala Senanayake Mawatha<br>Anuradhapura, Sri Lanka</p></div><div><small>OPEN</small><p>Mon—Sat, 9:30—18:00<br>Sunday by appointment</p></div><div><small>TALK</small><p><a href="tel:+94252234567">+94 25 223 4567</a><br><a href="mailto:hello@x.lk">hello@x.lk</a></p></div></div></div>
+        <form class="contact-form" id="contactForm"><p class="kicker" data-i18n="sendNote">SEND US A NOTE</p><label><span data-i18n="name">Your name</span><input required name="name" autocomplete="name"></label><label><span data-i18n="email">Email address</span><input required name="email" type="email" autocomplete="email"></label><label><span data-i18n="interested">I'm interested in</span><select><option>Buying a piece</option><option>Custom furniture</option><option>Interior styling</option><option>Something else</option></select></label><label><span data-i18n="message">Tell us a little more</span><textarea rows="4"></textarea></label><button class="btn dark full" type="submit"><span data-i18n="send">Send message</span><b>↗</b></button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main"><a class="brand footer-brand" href="#home" data-route="home">X<span>.</span></a><h2 data-i18n="footerTitle">Good objects.<br><em>Better living.</em></h2><div class="footer-nav"><div><small>EXPLORE</small><a href="#shop" data-route="shop">Collection</a><a href="#custom" data-route="custom">Custom studio</a><a href="#about" data-route="about">Our story</a></div><div><small>FOLLOW</small><a href="#">Instagram ↗</a><a href="#">Pinterest ↗</a><a href="#">Facebook ↗</a></div></div></div>
+    <div class="footer-bottom"><span>© 2026 X FURNITURE</span><span>ANURADHAPURA — SRI LANKA</span><button id="topBtn">BACK TO TOP ↑</button></div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping bag"><div class="drawer-head"><h2>Your bag <span id="drawerCount">0</span></h2><button id="closeCart" aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-empty" id="cartEmpty"><span>○</span><p>Your bag is waiting.</p><a href="#shop" data-route="shop" class="text-link">Explore collection →</a></div><div class="cart-foot" id="cartFoot"><div><span>Subtotal</span><strong id="cartTotal">LKR 0</strong></div><button class="btn dark full" id="checkoutBtn">Place order <b>↗</b></button><small>Delivery calculated after we confirm your address.</small></div></aside>
+  <div class="overlay" id="overlay"></div>
+  <dialog id="photoDialog" class="photo-dialog" aria-label="Furniture photo viewer"><button id="closePhoto" aria-label="Close photo">×</button><img id="dialogPhoto" alt=""><p id="dialogCaption"></p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
